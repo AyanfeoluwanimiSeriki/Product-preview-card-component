@@ -1,0 +1,142 @@
+*,
+::after,
+::before{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 600px;
+    /* background-color: var(--White); */
+    display: flex;
+    justify-content: flex-start;
+    gap: 0;
+    border-radius: 10px;
+    /* align-items: center; */
+}
+.image-bg{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
+}
+.image-bg img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.contents{
+    padding: 20px;
+    width: 100%;
+    background-color: var(--White);
+    border-radius: 0 10px 10px 0;
+}
+.contents p{
+    color: var(--Dark-grayish-blue);
+    font-family: 'Montserrat';
+}
+.contents h2{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 30px;
+    margin: 15px 0 20px 0 ;
+}
+.texts{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.money{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.money h3{
+    font-size: 30px;
+    color: var(--Dark-cyan);
+    font-family: 'Montserrat';
+}
+small{
+    color: var(--Dark-grayish-blue);
+    font-weight: 700;
+    font-size: 20px;
+}
+button{
+    width: 100%;
+    padding: 15px;
+    background-color: var(--Dark-cyan);
+    border: none;
+    border-radius: 10px;
+    color: var(--White);
+    margin-top: 25px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 900px){
+    .container{
+        width: 100%;
+        height: 100%;
+        background-color: var(--Cream);
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        align-items: center;
+    }
+    .main{
+        width: 100%;
+        /* background-color: var(--White); */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+        border-radius: 0px;
+        /* align-items: center; */
+    }
+    .image-bg{
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px  10px 0 0;
+        height: 300px;
+    }
+    .contents{
+        padding: 20px;
+        width: 100%;
+        background-color: var(--White);
+        /* border-bottom-left-radius: 10px;  */
+        /* border-bottom-right-radius: 10px; */
+        border-radius:0 0 10px 10px;
+        margin-top: 0px;
+        
+    }
+    .image-bg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+}
